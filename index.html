@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevLog Report</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- APP CONTAINER -->
+  <div class="app-container">
+
+    <!-- HEADER -->
+    <header class="report-header">
+      
+      <div class="header-left">
+        <h1 class="app-title">DevLog Report</h1>
+        <p id="date-range" class="sub-text">
+          CookieAI Analytics Development Journey
+        </p>
+      </div>
+
+      <div class="header-right">
+        <div id="stats" class="summary-badge">
+          Loading...
+        </div>
+      </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TIMELINE FEED -->
+      <section id="report-feed" class="timeline"></section>
+
+      <!-- EMPTY STATE (fallback handled in JS too) -->
+      <div id="empty-state" class="empty-state" style="display: none;">
+        <p>No activity logged yet</p>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="day.js"></script>
+
+</body>
+</html>
